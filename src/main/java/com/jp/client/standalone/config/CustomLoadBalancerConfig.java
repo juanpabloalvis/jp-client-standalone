@@ -18,9 +18,6 @@ public class CustomLoadBalancerConfig {
     private DiscoveryClient discoveryClient;
     String serviceId = "JP-CONFIG";
 
-    @Autowired
-    private WebClient.Builder loadBalancedWebClientBuilder;
-
 
     @Bean
     ServiceInstanceListSupplier serviceInstanceListSupplier() {
